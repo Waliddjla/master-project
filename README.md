@@ -3,11 +3,11 @@
 This master thesis focused on the development of an evapotranspiration prediction system using Python as the programming language. Several libraries were utilized, including NumPy, Keras, Seaborn, Matplotlib, and Pandas. The objective was to leverage machine learning and deep learning algorithms such as Support Vector Machine (SVM), linear regression, and Sequential Multi-Layer Perceptron (MLP) to achieve accurate predictions. The research aimed to contribute to the growing success of machine learning models in evapotranspiration prediction and attract the attention of researchers in the field. The selection of appropriate algorithms was a crucial aspect of the study to ensure an effective final prediction. Through efficient study and programming, the models were developed to effectively utilize these algorithms within the context of the evapotranspiration prediction system.To evaluate the effectiveness of the developed models, several prediction models were applied and tested on a dataset. Different results were obtained for each model, allowing for a comprehensive analysis and comparison. Statistical and graphical tests were implemented to visualize and analyze the results. It was observed that machine learning exhibited high efficiency, and the accuracy of the predictions was deemed satisfactory. This work demonstrated the power and potential of various machine learning models in the realm of artificial intelligence programming for evapotranspiration prediction. The findings of this research are expected to significantly improve irrigation planning and contribute to effective water management strategies.
 
 
-#Installation:
+## Installation:
 
 
 
-#Clone the repository:
+## Clone the repository:
 
 
 git clone https://github.com/Waliddjla/master-project/tree/main/master-test 
@@ -16,11 +16,12 @@ git clone https://github.com/Waliddjla/master-project/tree/main/master-test
 
 
 pip install numpy keras seaborn matplotlib pandas
-#Run the prediction system:*
+
+## Run the prediction system:*
 
 python main.py
 
-#Usage:
+## Usage:
 
 
 import seaborn as sns
@@ -404,7 +405,7 @@ _ = plt.plot(lims, lims)
 
 
 
-#Results:
+## Results:
 
 
 ![prediction0](https://github.com/Waliddjla/master-project/assets/62522548/f51e5acc-594e-4d32-b053-4d2deccbbef9)
