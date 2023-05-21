@@ -3,14 +3,14 @@
 This master thesis focused on the development of an evapotranspiration prediction system using Python as the programming language. Several libraries were utilized, including NumPy, Keras, Seaborn, Matplotlib, and Pandas. The objective was to leverage machine learning and deep learning algorithms such as Support Vector Machine (SVM), linear regression, and Sequential Multi-Layer Perceptron (MLP) to achieve accurate predictions. The research aimed to contribute to the growing success of machine learning models in evapotranspiration prediction and attract the attention of researchers in the field. The selection of appropriate algorithms was a crucial aspect of the study to ensure an effective final prediction. Through efficient study and programming, the models were developed to effectively utilize these algorithms within the context of the evapotranspiration prediction system.To evaluate the effectiveness of the developed models, several prediction models were applied and tested on a dataset. Different results were obtained for each model, allowing for a comprehensive analysis and comparison. Statistical and graphical tests were implemented to visualize and analyze the results. It was observed that machine learning exhibited high efficiency, and the accuracy of the predictions was deemed satisfactory. This work demonstrated the power and potential of various machine learning models in the realm of artificial intelligence programming for evapotranspiration prediction. The findings of this research are expected to significantly improve irrigation planning and contribute to effective water management strategies.
 
 
-Installation:
-Clone the repository:
+#Installation:
+#Clone the repository:
 git clone https://github.com/Waliddjla/master-project/tree/main/master-test 
-Install the required libraries:
+#Install the required libraries:
 pip install numpy keras seaborn matplotlib pandas
-Run the prediction system:
+#Run the prediction system:
 python main.py
-Usage:
+#Usage:
 import seaborn as sns
 import seaborn as sb
 import numpy as np
@@ -84,7 +84,7 @@ plt.xlim(lims)
 plt.ylim(lims)
 _ = plt.plot(lims, lims)
 
-# one parmetre 
+one parmetre 
 start_time = time.time()
 regg1 = SVR(kernel='rbf')
 regg1.fit(X_train[['Avg Rel Hum (%)']], y_train)
@@ -134,7 +134,7 @@ print("--- %s seconds ---" %(time.time() -  start_time))
 print('MAE :' , mean_absolute_error(y_test,prediction5))
 print('RMSE:', np.sqrt(mean_squared_error(y_test,prediction5)))
 print(r2_score(y_test, prediction5))
-#♣with 6
+with 6
 start_time = time.time()
 regg6 = SVR(kernel='rbf')
 regg6.fit(X_train[['Avg Rel Hum (%)','Wind Run (km)','Avg Wind Speed (m/s)', 'Avg Vap Pres (kPa)','Avg Air Temp (C)','Avg Soil Temp (C)']], y_train)
@@ -144,7 +144,7 @@ print("--- %s seconds ---" %(time.time() -  start_time))
 print('MAE :' , mean_absolute_error(y_test,prediction6))
 print('RMSE:', np.sqrt(mean_squared_error(y_test,prediction6)))
 print(r2_score(y_test, prediction6))
-#with 7
+with 7:
 start_time = time.time()
 regg7 = SVR(kernel='rbf')
 regg7.fit(X_train[['Avg Rel Hum (%)','Wind Run (km)','Avg Wind Speed (m/s)', 'Avg Vap Pres (kPa)','Avg Air Temp (C)','Avg Soil Temp (C)','Net Rad (W/sq.m)']], y_train)
@@ -154,7 +154,6 @@ print("--- %s seconds ---" %(time.time() -  start_time))
 print('MAE :' , mean_absolute_error(y_test,prediction7))
 print('RMSE:', np.sqrt(mean_squared_error(y_test,prediction7)))
 print(r2_score(y_test, prediction7))
-
 start_time = time.time()
 regg10 = SVR(kernel='rbf')
 regg10.fit(X_train[['Avg Rel Hum (%)','Wind Run (km)','Avg Wind Speed (m/s)', 'Avg Vap Pres (kPa)','Avg Air Temp (C)','Avg Soil Temp (C)','Sol Rad (W/sq.m)']], y_train)
@@ -194,8 +193,6 @@ plt.ylabel('Y-axis')
 plt.legend(loc='best',fancybox=True, shadow=True)
 plt.grid(True)
 plt.show()           
-
-
 a = plt.axes(aspect='equal')
 plt.scatter(y_test,prediction9,color='red')
 plt.xlabel('True Values ETo')
@@ -204,7 +201,11 @@ lims = [0,8]
 plt.xlim(lims)
 plt.ylim(lims)
 _ = plt.plot(lims, lims)
-Results:
+
+
+
+
+#Results:
 ![prediction0](https://github.com/Waliddjla/master-project/assets/62522548/f51e5acc-594e-4d32-b053-4d2deccbbef9)
 ![pred8](https://github.com/Waliddjla/master-project/assets/62522548/2d11d2fb-3d1b-4efe-8a98-a0546b4db9ae)
 
